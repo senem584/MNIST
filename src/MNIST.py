@@ -3,6 +3,7 @@ import keras
 from keras import Sequential 
 from keras.layers import Dense, Flatten
 from sklearn.metrics import accuracy_score
+import matplotlib.pyplot as plt
 
 # uploading the MNIST dataset using the keras API
 # using load_data() splits the dataset into 2 parts: x_train and y_train
@@ -13,10 +14,10 @@ from sklearn.metrics import accuracy_score
 # checking the dataset to make sure i understand
 # 28x28 pixels in the X sets
 # 60k samples in training and 10k samples in testing
-# print(X_train.shape)
-# print(y_train.shape)
-# print(X_test.shape)
-# print(y_test.shape)
+print(X_train.shape)
+print(y_train.shape)
+print(X_test.shape)
+print(y_test.shape)
 
 # data preprocessing
 # we are training and testing with images, so it is important to normalize the pixel values
@@ -49,3 +50,26 @@ history = model.fit(X_train,y_train,epochs=25,validation_split=0.2)
 y_prob = model.predict(X_test)
 y_pred = y_prob.argmax(axis=1)
 accuracy_score(y_test,y_pred)
+print("Test accuracy (sklearn):", accuracy_score(y_test, y_pred))
+
+#model loss 
+plt.figure()
+plt.plot(history.history['loss'], label='train loss')
+plt.plot(history.history['val_loss'], label='val loss')
+plt.title('Model Loss')
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+#model accuracy 
+plt.figure()
+plt.plot(history.history['accuracy'], label='train acc')
+plt.plot(history.history['val_accuracy'], label='val acc')
+plt.title('Model Accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.grid(True)
+plt.show()
