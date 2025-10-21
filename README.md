@@ -1,7 +1,7 @@
 # MNIST Dataset Example
 This project demonstrates how to perform image classification using the MNIST dataset with machine learning algorithms, focusing specifically on implementing a Convolutional Neural Network (CNN). The MNIST dataset consists of 70,000 handwritten digits (0-9) and is a good example of a supervised learning problem problem in image recognition tasks. A CNN is used in ML when the input data consists of images or spatial data, and the goal is to automatically learn patterns such as edges, textures, and shapes. 
 
-The goal is to showcase fundamental techniques in image classification and machine learning, highlighting how models can learn from image data to recognize and classify visual patterns with high accuracy. 
+The goal is to showcase fundamental techniques in image classification and machine learning, highlighting how models can learn from image data to recognize and classify visual patterns with high accuracy. The code is implemented in two styles: a regular procedural version and an object-oriented (OOP) version for better modularity and reusability. Both are shown in the source folder.
 # Table Of Contents
 - [Implementation](#implementation)
 - [Requirements](#requirments)
