@@ -35,8 +35,6 @@ Run using:
 - Make sure your enviornment is active.
 - python MNIST.py
 
-# Error Handling 
-This project does not have any error handling.
 # References 
 - [1]GeeksforGeeks, “MNIST Dataset : Practical Applications Using Keras and PyTorch,” GeeksforGeeks, May 2024. https://www.geeksforgeeks.org/machine-learning/mnist-dataset/
 - [2]A. Khan, “A Beginner’s Guide to Deep Learning with MNIST Dataset,” Medium, Apr. 16, 2024. https://medium.com/@azimkhan8018/a-beginners-guide-to-deep-learning-with-mnist-dataset-0894f7183344
