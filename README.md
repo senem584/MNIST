@@ -24,9 +24,17 @@ keras==3.11.3
 scikit-learn==1.7.1
 ```
 # How to Use
-To utilize this code, a Python environment should be installed onto the MNIST.py file onto your computer into a folder. Then, open that folder/file on VS Code.
+Clone the repository
+- On GitHub, click the Code button and copy the HTTPS URL.
+- In VS Code, choose Clone Repository, then paste the URL.
 
-Another way to open this file is to clone the repository within Github. To do this, you press the Code button on Github and copy the HTTPS URL. When you open VS Code, you will be prompted to make a selection. One of the options is to clone a repository, and if that is pressed, you can paste the URL. This will open the repository into Github.
+Run the file
+- Locate the file named MNIST.py.
+
+Run using:
+- Make sure your enviornment is active.
+- python MNIST.py
+
 # Error Handling 
 This project does not have any error handling.
 # References 
